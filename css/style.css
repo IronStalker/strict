@@ -11,3 +11,71 @@
 
 /*___________BEGIN FOOTER _______________*/
 /*___________END FOOTER   _______________*/
+
+
+/* ___________1. Сброс CSS____________________*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ___________2. Типовые элементы____________*/
+/* _______________2.1. Залоговки______________*/
+h1{
+    font-size: 120px;
+    line-height: 47px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+}
+h2{
+    font-size: 41px;
+    /*line-height: auto;*/
+    font-weight: normal;
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-align: center;
+}
+h3{
+    font-size: 22px;
+    /*line-height: 47px;*/
+    font-weight: normal;
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-align: center;
+}
+/* _______________2.2. Ссылки________________*/
+/* _______________2.3. Элементы форм_________*/
+
+
+html{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lato', Arial, sans-serif;
+}
+.wrapper{
+    min-height: calc(100vh - 90px); /* Sticky footer */
+}
+
+
+/*___________3. HEADER (Шапка сайта) __________*/
+.header,{
+    background-color: #f6f9f9;
+    min-height: 100px;
+    border-bottom: 1px solid #000;
+}
+.header-logo{
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    margin-right: 40px;
+}
+.footer-left{
+    float: left;
+    height: 90px;
+    line-height: 90px;
+    margin: 0;
+}
