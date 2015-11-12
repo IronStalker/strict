@@ -24,11 +24,17 @@
 /* _______________2.1. Залоговки______________*/
 h1{
     font-size: 120px;
-    line-height: 47px;
+    line-height: 120px;
     font-weight: bold;
     text-transform: uppercase;
     white-space: nowrap;
     text-align: center;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
 }
 h2{
     font-size: 41px;
@@ -73,9 +79,71 @@ html{
     float: left;
     margin-right: 40px;
 }
+
+/*___________4. FOOTER (Подвал )_______________*/
 .footer-left{
     float: left;
     height: 90px;
     line-height: 90px;
     margin: 0;
+}
+
+/* _____________Promo section _____________________*/
+.promo{
+    display: table;
+    width: 100%;
+    text-align: center;
+    background: url(../img/bg-promo.jpg) center;
+    background-size: cover;
+    max-height: 800px;
+    height: calc(100vh - 100px); /*  - header */
+    color: #ffffff;
+}
+.cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.wrap-promo-content{
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+    /*text-align: center;*/
+    position: relative;
+}
+h1:after {
+    content: "";
+    height: 2px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #3ba0d1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.promo-subtitle{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 65px;
+}
+.btn{
+    font-size: 18px;
+    border: 1px solid #3ba0d1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #ffffff;
+    width: 175px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0;
+}
+.icon-down{
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    left: calc(50% - 12px);
+    bottom: 5%;
 }
