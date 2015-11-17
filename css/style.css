@@ -62,6 +62,7 @@ h2{
     text-transform: capitalize;
     white-space: nowrap;
     text-align: center;
+    margin: 2.5rem;
 }
 h3{
     font-size: 1.38rem;
@@ -71,6 +72,14 @@ h3{
     white-space: nowrap;
     text-align: center;
 }
+.design-description {
+    font-size: 1.25rem;
+    color: #999999;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
 /* _______________2.2. Ссылки________________*/
 /* _______________2.3. Элементы форм_________*/
 
@@ -84,7 +93,7 @@ h3{
     /*min-height: 100px;*/
     width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
 
 }
 
@@ -92,7 +101,7 @@ h3{
 .header {
     background-color: #f6f9f9;
     min-height: 6.25rem;
-    border-bottom: 1px solid #000;
+    /*border-bottom: 1px solid #000;*/
 }
 .header-logo-link {
     height: 6.25rem;
@@ -194,4 +203,9 @@ h1:after {
     .icon-down{
         display: none;
     }
+}
+
+.about-design{
+    padding: 2rem;
+    background-color: #f6f9f9;
 }
