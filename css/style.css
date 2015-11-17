@@ -18,26 +18,45 @@
     margin: 0;
     padding: 0;
 }
+html{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 16px;
+}
 
+@media (max-width: 768px) {
+    html {font-size:10px;}
+}
+@media (min-width: 768px) {
+    html {font-size:14px;}
+}
+/*@media (min-width:992px) {
+    html {font-size:14px;}
+}*/
+@media (min-width:1200px) {
+    html {font-size:16px;}
+}
 
 /* ___________2. Типовые элементы____________*/
 /* _______________2.1. Залоговки______________*/
 h1{
-    font-size: 120px;
-    line-height: 120px;
+    font-size: 7.5rem;
+    line-height: 7.5rem;
     font-weight: bold;
     text-transform: uppercase;
     white-space: nowrap;
     text-align: center;
-    padding-bottom: 35px;
-    margin-bottom: 40px;
+    padding-bottom: 2.19rem;
+    margin-bottom: 2.5rem;
     display: inline-block;
     position: relative;
     width: 100%;
 
 }
 h2{
-    font-size: 41px;
+    font-size: 2.5rem;
     /*line-height: auto;*/
     font-weight: normal;
     text-transform: capitalize;
@@ -45,7 +64,7 @@ h2{
     text-align: center;
 }
 h3{
-    font-size: 22px;
+    font-size: 1.38rem;
     /*line-height: 47px;*/
     font-weight: normal;
     text-transform: capitalize;
@@ -56,35 +75,49 @@ h3{
 /* _______________2.3. Элементы форм_________*/
 
 
-html{
-    max-width: 1600px;
+
+/*.wrapper{*/
+    /*min-height: calc(100vh - 90px); *//* Sticky footer */
+/*}*/
+.container{
+    max-width: 1200px;
+    /*min-height: 100px;*/
     width: 100%;
     margin: 0 auto;
-    font-family: 'Lato', Arial, sans-serif;
-}
-.wrapper{
-    min-height: calc(100vh - 90px); /* Sticky footer */
-}
+    padding: 0 1rem;
 
+}
 
 /*___________3. HEADER (Шапка сайта) __________*/
-.header,{
+.header {
     background-color: #f6f9f9;
-    min-height: 100px;
+    min-height: 6.25rem;
     border-bottom: 1px solid #000;
 }
-.header-logo{
-    height: 100px;
-    line-height: 100px;
-    float: left;
-    margin-right: 40px;
+.header-logo-link {
+    height: 6.25rem;
+    /*width: 9.63rem;*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    line-height: 6.25rem;
+    /*float: left;*/
+    margin-left: 2.5rem;
+}
+.header-logo {
+    width: 9.63rem;
+    /*height: 100px;*/
+    /*display: inline-block;*/
+    vertical-align: middle;
+    /*line-height: 100px;*/
+    /*float: left;*/
+    /*margin-left: 40px;*/
 }
 
 /*___________4. FOOTER (Подвал )_______________*/
 .footer-left{
     float: left;
-    height: 90px;
-    line-height: 90px;
+    height: 5.63rem;
+    line-height: 5.63rem;
     margin: 0;
 }
 
@@ -95,8 +128,8 @@ html{
     text-align: center;
     background: url(../img/bg-promo.jpg) center;
     background-size: cover;
-    max-height: 800px;
-    height: calc(100vh - 100px); /*  - header */
+    /*min-height: 500px;*/
+    height: calc(100vh - 6.25rem); /*  - header */
     color: #ffffff;
 }
 .cell{
@@ -115,7 +148,7 @@ h1:after {
     height: 2px;
     max-width: 600px;
     width: 100%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     background-color: #3ba0d1;
     position: absolute;
     left: 0;
@@ -123,27 +156,42 @@ h1:after {
 }
 .promo-subtitle{
     font-weight: normal;
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 65px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    margin-bottom: 4.06rem;
 }
 .btn{
-    font-size: 18px;
+    display: inline-block;
+    font-size: 1.125rem;
     border: 1px solid #3ba0d1;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-decoration: none;
     color: #ffffff;
-    width: 175px;
-    height: 55px;
-    line-height: 55px;
+    width: 10.94rem;
+    height: 3.44rem;
+    line-height: 3.44rem;
     padding: 0;
+    margin: 2px;
+}
+.btn:hover{
+    font-size: 1.25rem;
+    border: 3px solid #3ba0d1;
+    background-color: #3ba0d1;
+    margin: 0;
+
+
 }
 .icon-down{
     color: #ffffff;
-    font-size: 24px;
+    font-size: 1.5rem;
     position: absolute;
-    left: calc(50% - 12px);
-    bottom: 5%;
+    left: calc(50% - 0.75rem);
+    bottom: 2rem;
+}
+@media (max-width: 767px) {
+    .icon-down{
+        display: none;
+    }
 }
