@@ -71,6 +71,8 @@ h3{
     text-transform: capitalize;
     white-space: nowrap;
     text-align: center;
+    margin: 1.5em;
+
 }
 .design-description {
     font-size: 1.25rem;
@@ -78,6 +80,14 @@ h3{
     line-height: 2rem;
     text-align: center;
     margin-bottom: 2.5rem;
+}
+.feature-subscribe{
+    font-size: 1rem;
+    color: #999999;
+    line-height: 1.38rem;
+    text-align: center;
+    padding: 0 15%;
+
 }
 
 /* _______________2.2. Ссылки________________*/
@@ -208,4 +218,40 @@ h1:after {
 .about-design{
     padding: 2rem;
     background-color: #f6f9f9;
+}
+
+.design-items{
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+}
+
+@media (max-width: 768px) {
+    .design-items{
+         display: block;
+         width: 100%;
+     }
+}
+
+.bg-icon-item{
+    width: 6.25rem;
+    height: 6.25rem;
+    background: #48baff;
+    background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 51%, #5fc3ff 100%);
+    background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 51%,#5fc3ff 100%);
+    background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 51%,#5fc3ff 100%);
+    margin: 4rem auto 0;
+}
+.icon-paper-plane,
+.icon-megaphone,
+.icon-mobile {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.icon-paper-plane:before,
+.icon-megaphone:before,
+.icon-mobile:before {
+    margin-top: calc(50% - 1.25rem);
+
 }
