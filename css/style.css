@@ -81,13 +81,15 @@ h3{
     text-align: center;
     margin-bottom: 2.5rem;
 }
-.feature-subscribe{
+p {
     font-size: 1rem;
     color: #999999;
     line-height: 1.38rem;
     text-align: center;
+}
+.feature-subscribe {
     padding: 0 15%;
-
+    margin-bottom: 4.38rem;
 }
 
 /* _______________2.2. Ссылки________________*/
@@ -133,11 +135,12 @@ h3{
 }
 
 /*___________4. FOOTER (Подвал )_______________*/
-.footer-left{
+.footer-left {
     float: left;
     height: 5.63rem;
     line-height: 5.63rem;
-    margin: 0;
+    margin: 0 1rem;
+    padding: 0;
 }
 
 /* _____________Promo section _____________________*/
@@ -178,6 +181,7 @@ h1:after {
     font-size: 1.25rem;
     line-height: 1.25rem;
     margin-bottom: 4.06rem;
+    color: #f6f6f6;
 }
 .btn{
     display: inline-block;
@@ -209,7 +213,7 @@ h1:after {
     left: calc(50% - 0.75rem);
     bottom: 2rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .icon-down{
         display: none;
     }
@@ -249,9 +253,105 @@ h1:after {
     font-size: 2.5rem;
     text-align: center;
 }
+.icon-mobile{
+    font-size: 4.38rem;
+}
 .icon-paper-plane:before,
-.icon-megaphone:before,
-.icon-mobile:before {
+.icon-megaphone:before {
     margin-top: calc(50% - 1.25rem);
+}
+.icon-mobile:before {
+    margin-top: calc(50% - 2.19rem);
+}
 
+/* ____________portfolio_______________] */
+
+.portfolio {
+    background-color: #f6f9f9;
+    padding-top: 4.5rem;
+}
+.portfolio-subscribe {
+    margin-bottom: 5rem;
+}
+.portfolio .container {
+    font-size: 0;
+}
+.portfolio-item {
+    margin: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    /*position: relative;*/
+}
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: calc(100% - 1rem);
+        padding-bottom: calc((100% - 1rem) * 0.72);
+    }
+}
+@media (min-width: 768px) {
+    .portfolio-item {
+        width: calc(50% - 2rem);
+        padding-bottom: calc((50% - 2rem) * 0.72);
+    }
+}
+@media (min-width:1200px) {
+    .portfolio-item {
+        width: calc(33.3% - 2rem);
+        padding-bottom: calc((33.3% - 2rem) * 0.72);
+    }
+}
+.portfolio-item:nth-child(1) {
+    background: url(../img/content/portfolio-item-1.png) no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size:  100% 100%;
+
+}
+.portfolio-item:nth-child(2) {
+    background: #ffffff url(../img/content/portfolio-item-2.png) center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:  100% 100%;
+}
+.portfolio-item:nth-child(3) {
+    background: #ffffff url(../img/content/portfolio-item-3.png) center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:  100% 100%;
+}
+.portfolio-item:nth-child(4) {
+    background: #ffffff url(../img/content/portfolio-item-4.png) center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:  100% 100%;
+}
+.portfolio-item:nth-child(5) {
+    background: #ffffff url(../img/content/portfolio-item-5.png) center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:  100% 100%;
+}
+.portfolio-item:nth-child(6) {
+    background: #ffffff url(../img/content/portfolio-item-6.png) center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:  100% 100%;
+}
+.display-table {
+    display: table;
+    width: 100%;
+    /*padding-bottom: 72%;*/
+    position: relative;
+}
+.portfolio-item-hover {
+    width: 100%;
+    padding-bottom: 72%;
+    position: absolute;
+    /*background-color: red;*/
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.portfolio-item-hover:hover {
+    background-color: rgba(43,172,250,.9);
+}
+.zoom,
+.link {
+    width: 100px;
+    height: 100px;
+    background-color: red;
 }
