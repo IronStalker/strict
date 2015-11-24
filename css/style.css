@@ -280,7 +280,8 @@ h1:after {
     margin: 1rem;
     display: inline-block;
     vertical-align: top;
-    /*position: relative;*/
+    position: relative;
+    text-align: center;
 }
 @media (max-width: 768px) {
     .portfolio-item {
@@ -301,7 +302,7 @@ h1:after {
     }
 }
 .portfolio-item:nth-child(1) {
-    background: url(../img/content/portfolio-item-1.png) no-repeat center;
+    background: url(../img/content/portfolio-item-1.png) no-repeat center, rgba(100,100,100,.5);
     -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
 
@@ -331,27 +332,50 @@ h1:after {
     -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
 }
-.display-table {
-    display: table;
-    width: 100%;
-    /*padding-bottom: 72%;*/
-    position: relative;
-}
 .portfolio-item-hover {
     width: 100%;
     padding-bottom: 72%;
+    background-color: rgba(43,172,250,0);
     position: absolute;
-    /*background-color: red;*/
-    display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
 .portfolio-item-hover:hover {
     background-color: rgba(43,172,250,.9);
 }
+.portfolio-item-hover:hover .zoom,
+.portfolio-item-hover:hover .link {
+    display: inline-block;
+}
+
+.zoom-link-wrap{
+    position: absolute;
+    margin-top: calc(36% - 1.315rem);
+    margin-left: calc(50% - 2.63rem - 0.63rem/2);
+}
 .zoom,
 .link {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    display: none;
+    width: 2.63rem;
+    height: 2.63rem;
+    border: 1px solid #fff;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+    /*padding-top: 0.82rem;*/
+}
+.zoom{
+    margin-right: 0.63rem;
+}
+.zoom:hover,
+.link:hover {
+    background-color: rgba(21,164,250,1);
+}
+.icon-link:before,
+.icon-zoom-in:before {
+    line-height: 2.63rem;
 }
