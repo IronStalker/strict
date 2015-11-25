@@ -60,7 +60,7 @@ h2{
     /*line-height: auto;*/
     font-weight: normal;
     text-transform: none;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     text-align: center;
     margin: 2.5rem;
 }
@@ -386,7 +386,7 @@ h1:after {
     background: url(../img/bg-feedback.jpg) no-repeat center;
     -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
-    min-height: 700px;
+    min-height: 43rem;
 }
 .container-feedback {
     max-width: 550px;
@@ -396,4 +396,58 @@ h1:after {
 }
 .feedback h2{
     color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+.feedback .h2-subscribe {
+    margin-bottom: 3.25rem;
+}
+input[type="text"],
+textarea {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    outline: none;
+    background: transparent;
+    border: 1px solid #999999;
+    border-radius: 0.25rem;
+    padding-left: 1.25em;
+    height: 3.75rem;
+    color: #999999;
+    box-sizing: border-box;
+}
+textarea {
+    font-family: 'Lato', Arial, sans-serif;
+    padding-top: 1.5rem;
+    /*padding-left: 1.5rem;*/
+    height: 10rem;
+    font-size: 1rem;
+}
+input[type="checkbox"] {
+    background-color: #fafcfc;
+    margin-top: 0.8rem;
+}
+label[for="subscribe"] {
+    padding-left: 1rem;
+    color: #ffffff;
+    margin-top: 0.8rem;
+}
+input[type="submit"] {
+    font-size: 1rem;
+    float: right;
+    display: block;
+    width: 8.75em;
+    height: 2.8rem;
+    border: 1px solid #15a4fa;
+    border-radius: 0.25rem ;
+    color: #ffffff;
+    background-color: transparent;
+}
+input[type="submit"]:hover {
+    background-color: #15a4fa;
+}
+form{
+    max-width: 550px;
+    width: 100%;
 }
