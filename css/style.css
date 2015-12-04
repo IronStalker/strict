@@ -1,19 +1,3 @@
-/* ___________1. Сброс CSS____________________*/
-/* ___________2. Типовые элементы____________*/
-/* _______________2.1. Залоговки______________*/
-/* _______________2.2. Ссылки________________*/
-/* _______________2.3. Элементы форм_________*/
-/*___________3. HEADER (Шапка сайта) __________*/
-/*___________4. FOOTER (Подвал )_______________*/
-/*___________5. SIDEBAR (Справа)_______________*/
-
-
-
-/*___________BEGIN FOOTER _______________*/
-/*___________END FOOTER   _______________*/
-
-
-/* ___________1. Сброс CSS____________________*/
 *{
     margin: 0;
     padding: 0;
@@ -32,15 +16,12 @@ html{
 @media (min-width: 768px) {
     html {font-size:14px;}
 }
-/*@media (min-width:992px) {
-    html {font-size:14px;}
-}*/
 @media (min-width:1200px) {
     html {font-size:16px;}
 }
 
-/* ___________2. Типовые элементы____________*/
-/* _______________2.1. Залоговки______________*/
+/* _____________________________Headlines____________*/
+
 h1{
     font-size: 7.5rem;
     line-height: 7.5rem;
@@ -53,104 +34,63 @@ h1{
     display: inline-block;
     position: relative;
     width: 100%;
-
 }
 h2{
     font-size: 2.5rem;
-    /*line-height: auto;*/
     font-weight: normal;
     text-transform: none;
-    /*white-space: nowrap;*/
     text-align: center;
-    margin: 2.5rem;
+    margin: 1.5rem;
 }
 h3{
     font-size: 1.38rem;
-    /*line-height: 47px;*/
     font-weight: normal;
     text-transform: capitalize;
     white-space: nowrap;
     text-align: center;
     margin: 1.5em;
+}
 
-}
-.design-description {
-    font-size: 1.25rem;
-    color: #999999;
-    line-height: 2rem;
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
+/* __________________________________________*/
+
 p {
     font-size: 1rem;
     color: #999999;
     line-height: 1.38rem;
     text-align: center;
 }
-.feature-subscribe {
-    padding: 0 15%;
-    margin-bottom: 4.38rem;
-}
-
-/* _______________2.2. Ссылки________________*/
-/* _______________2.3. Элементы форм_________*/
-
-
-
-/*.wrapper{*/
-    /*min-height: calc(100vh - 90px); *//* Sticky footer */
-/*}*/
 .container{
     max-width: 1200px;
     /*min-height: 100px;*/
     width: 100%;
     margin: 0 auto;
     padding: 0;
-
 }
 
-/*___________3. HEADER (Шапка сайта) __________*/
+/*__________________________ HEADER ______________________*/
+
 .header {
     background-color: #f6f9f9;
     min-height: 6.25rem;
-    /*border-bottom: 1px solid #000;*/
 }
 .header-logo-link {
     height: 6.25rem;
-    /*width: 9.63rem;*/
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
     line-height: 6.25rem;
-    /*float: left;*/
     margin-left: 2.5rem;
 }
 .header-logo {
     width: 9.63rem;
-    /*height: 100px;*/
-    /*display: inline-block;*/
     vertical-align: middle;
-    /*line-height: 100px;*/
-    /*float: left;*/
-    /*margin-left: 40px;*/
 }
 
-/*___________4. FOOTER (Подвал )_______________*/
-.footer-left {
-    float: left;
-    height: 5.63rem;
-    line-height: 5.63rem;
-    margin: 0 1rem;
-    padding: 0;
-}
-
-/* _____________Promo section _____________________*/
+/* ______________________________Promo section _____________________*/
 .promo{
     display: table;
     width: 100%;
     text-align: center;
     background: url(../img/bg-promo.jpg) center;
     background-size: cover;
-    /*min-height: 500px;*/
+    min-height: 500px;
     height: calc(100vh - 6.25rem); /*  - header */
     color: #ffffff;
 }
@@ -162,7 +102,6 @@ p {
     display: inline-block;
     max-width: 600px;
     width: 100%;
-    /*text-align: center;*/
     position: relative;
 }
 h1:after {
@@ -170,7 +109,6 @@ h1:after {
     height: 2px;
     max-width: 600px;
     width: 100%;
-    /*margin: 0 auto;*/
     background-color: #3ba0d1;
     position: absolute;
     left: 0;
@@ -183,28 +121,23 @@ h1:after {
     margin-bottom: 4.06rem;
     color: #f6f6f6;
 }
-.btn{
+.btn-call{
     display: inline-block;
     font-size: 1.125rem;
     border: 1px solid #3ba0d1;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     text-decoration: none;
     color: #ffffff;
     width: 10.94rem;
     height: 3.44rem;
     line-height: 3.44rem;
-    padding: 0;
     margin: 2px;
 }
-.btn:hover{
+.btn-call:hover{
     font-size: 1.25rem;
     border: 3px solid #3ba0d1;
     background-color: #3ba0d1;
     margin: 0;
-
-
 }
 .icon-down{
     color: #ffffff;
@@ -219,30 +152,34 @@ h1:after {
     }
 }
 
+/* _____________________about-design _____________________*/
+
 .about-design{
     padding: 2rem;
     background-color: #f6f9f9;
 }
-
+.design-description {
+    font-size: 1.25rem;
+    color: #999999;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
 .design-items{
     display: inline-block;
     vertical-align: top;
     width: 33%;
 }
-
 @media (max-width: 768px) {
     .design-items{
          display: block;
          width: 100%;
      }
 }
-
 .bg-icon-item{
     width: 6.25rem;
     height: 6.25rem;
     background: #48baff;
-    background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 51%, #5fc3ff 100%);
-    background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 51%,#5fc3ff 100%);
     background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 51%,#5fc3ff 100%);
     margin: 4rem auto 0;
 }
@@ -263,15 +200,19 @@ h1:after {
 .icon-mobile:before {
     margin-top: calc(50% - 2.19rem);
 }
+.feature-subscribe {
+    padding: 0 15%;
+    margin-bottom: 4.38rem;
+}
 
-/* ____________portfolio_______________] */
+/* ____________________portfolio_______________ */
 
 .portfolio {
     background-color: #f6f9f9;
     padding: 4.5rem 0 7.5rem;
 }
 .h2-subscribe {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 .portfolio .container {
     font-size: 0;
@@ -282,6 +223,7 @@ h1:after {
     vertical-align: top;
     position: relative;
     text-align: center;
+    background-size: 100% 100%;
 }
 @media (max-width: 768px) {
     .portfolio-item {
@@ -303,33 +245,26 @@ h1:after {
 }
 .portfolio-item:nth-child(1) {
     background: url(../img/content/portfolio-item-1.png) no-repeat center;
-    -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
-
 }
 .portfolio-item:nth-child(2) {
     background: #ffffff url(../img/content/portfolio-item-2.png) center no-repeat;
-    -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
 }
 .portfolio-item:nth-child(3) {
     background: #ffffff url(../img/content/portfolio-item-3.png) center no-repeat;
-    -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
 }
 .portfolio-item:nth-child(4) {
     background: #ffffff url(../img/content/portfolio-item-4.png) center no-repeat;
-    -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
 }
 .portfolio-item:nth-child(5) {
     background: #ffffff url(../img/content/portfolio-item-5.png) center no-repeat;
-    -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
 }
 .portfolio-item:nth-child(6) {
     background: #ffffff url(../img/content/portfolio-item-6.png) center no-repeat;
-    -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
 }
 .portfolio-item-hover {
@@ -347,7 +282,6 @@ h1:after {
 .portfolio-item-hover:hover .link {
     display: inline-block;
 }
-
 .zoom-link-wrap{
     position: absolute;
     margin-top: calc(36% - 1.315rem);
@@ -360,13 +294,10 @@ h1:after {
     height: 2.63rem;
     border: 1px solid #fff;
     text-decoration: none;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: transparent;
     color: #ffffff;
     font-size: 1rem;
-    /*padding-top: 0.82rem;*/
 }
 .zoom{
     margin-right: 0.63rem;
@@ -384,7 +315,6 @@ h1:after {
 
 .feedback{
     background: url(../img/bg-feedback.jpg) no-repeat center;
-    -webkit-background-size: 100% 100%;
     background-size:  100% 100%;
     min-height: 43rem;
 }
@@ -418,9 +348,7 @@ textarea {
     box-sizing: border-box;
 }
 textarea {
-    font-family: 'Lato', Arial, sans-serif;
     padding-top: 1.5rem;
-    /*padding-left: 1.5rem;*/
     height: 10rem;
     font-size: 1rem;
 }
@@ -450,4 +378,14 @@ input[type="submit"]:hover {
 form{
     max-width: 550px;
     width: 100%;
+}
+
+/*_______________ FOOTER ____________________________*/
+
+.footer-left {
+    float: left;
+    height: 5.63rem;
+    line-height: 5.63rem;
+    margin: 0 1rem;
+    padding: 0;
 }
