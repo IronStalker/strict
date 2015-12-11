@@ -56,6 +56,7 @@ html{
 .icon-paper-plane:before { content: '\e804'; } /* '' */
 .icon-megaphone:before { content: '\e805'; } /* '' */
 .icon-mobile:before { content: '\e806'; } /* '' */
+.icon-cancel:before { content: '\e807'; } /* '' */
 
 /* _____________________________Headlines____________*/
 
@@ -101,6 +102,7 @@ p {
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    position: relative;
 }
 
 /*__________________________ Header ______________________*/
@@ -345,6 +347,76 @@ h1:after {
 .icon-link:before,
 .icon-zoom-in:before {
     line-height: 2.63rem;
+}
+
+/* _________________________Portfolio photo zoom________________________ */
+
+.portfolio-item-zoom {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    margin: 1rem;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    /*bottom: 0;*/
+    border: 3px solid #999999;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: none;
+}
+.portfolio-item-zoom img{
+    width: 1000px;
+    height: 500px;
+}
+ /*1 - large photo */
+.portfolio-item-zoom:nth-of-type(7) {
+    background: url(../img/content/portfolio-item-1.png) center no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+/*2 - large photo */
+.portfolio-item-zoom:nth-of-type(8) {
+    background: url(../img/content/portfolio-item-2.png) center no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+/*3 - large photo */
+.portfolio-item-zoom:nth-of-type(9) {
+    background: url(../img/content/portfolio-item-3.png) center no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+/*4 - large photo */
+.portfolio-item-zoom:nth-of-type(10) {
+    background: url(../img/content/portfolio-item-4.png) center no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+/*5 - large photo */
+.portfolio-item-zoom:nth-of-type(11) {
+    background: url(../img/content/portfolio-item-5.png) center no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+/*6 - large photo */
+.portfolio-item-zoom:nth-of-type(12) {
+    background: url(../img/content/portfolio-item-6.png) center no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+.cancel {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: -1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fa4b15;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2.5rem;
 }
 
 /* ____________________________Feedback____________________________________ */
