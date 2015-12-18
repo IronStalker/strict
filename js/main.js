@@ -2,7 +2,10 @@ $(document).ready(function () {
     $(".popup").fancybox({
         helpers: {
             overlay: {
-                locked: false
+                locked: false,
+                css: {
+                    background: 'rgba(255,255,255,.9)'
+                }
             }
         }
     });
