@@ -1,22 +1,6 @@
-/*$(document).ready(function () {
- $(".popup").fancybox({
- 'autoSize': false,
- 'width': 800,
- helpers: {
- overlay: {
- locked: false,
- css: {
- background: 'rgba(255,255,255,.9)'
- }
- }
- }
- });
- });*/
-
-$('.popup').fancybox({
+$('.fancybox').fancybox({
     padding: 0,
-    minWidth: 900,
-    maxHeight: 600,
+    minWidth: 740,
 
     openEffect: 'elastic',
     openSpeed: 150,
@@ -24,19 +8,11 @@ $('.popup').fancybox({
     closeEffect: 'elastic',
     closeSpeed: 150,
 
-    fitToView: false,
-    width: '100%',
-    height: '100%',
-    autoSize: false,
-    closeClick: false,
-
     helpers: {
-        title: {
-            type: 'inside'
-        },
         overlay: {
+            locked: false,
             css: {
-                'background': '255,255,255,.9)'
+                'background-color': '255,255,255,.9)'
             }
         }
     }
